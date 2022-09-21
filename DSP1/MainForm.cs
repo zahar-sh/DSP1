@@ -120,16 +120,15 @@ namespace DSP1
         private void UseVariantB(object sender, EventArgs e)
         {
             CanRebuild = false;
-            SetParams(1, 3, 125);
+            SetParams(5, 1, 135);
             CanRebuild = true;
             CalcHarmonic();
-            SetParams(5, 1, 125);
         }
 
         private void UseVariantC(object sender, EventArgs e)
         {
             CanRebuild = false;
-            SetParams(1, 3, 125);
+            SetParams(1, 3, 135);
             CanRebuild = true;
             CalcHarmonic();
         }
@@ -195,21 +194,21 @@ namespace DSP1
             hInputF1.Value = CycleClaim(hInputF1.Value - 3, 0, 100);
             hInputP1.Value = CycleClaim(hInputF1.Value + 5, 0, 360);
 
-            hInputA2.Value = CycleClaim(hInputA1.Value + 5, 0, 100);
-            hInputF2.Value = CycleClaim(hInputF1.Value + 2, 0, 100);
-            hInputP2.Value = CycleClaim(hInputF1.Value - 3, 0, 360);
+            hInputA2.Value = CycleClaim(hInputA2.Value + 5, 0, 100);
+            hInputF2.Value = CycleClaim(hInputF2.Value + 2, 0, 100);
+            hInputP2.Value = CycleClaim(hInputF2.Value - 3, 0, 360);
 
-            hInputA3.Value = CycleClaim(hInputA1.Value - 3, 0, 100);
-            hInputF3.Value = CycleClaim(hInputF1.Value - 2, 0, 100);
-            hInputP3.Value = CycleClaim(hInputF1.Value + 3, 0, 360);
+            hInputA3.Value = CycleClaim(hInputA3.Value - 3, 0, 100);
+            hInputF3.Value = CycleClaim(hInputF3.Value - 2, 0, 100);
+            hInputP3.Value = CycleClaim(hInputF3.Value + 3, 0, 360);
 
-            hInputA4.Value = CycleClaim(hInputA1.Value - 2, 0, 100);
-            hInputF4.Value = CycleClaim(hInputF1.Value - 3, 0, 100);
-            hInputP4.Value = CycleClaim(hInputF1.Value - 4, 0, 360);
+            hInputA4.Value = CycleClaim(hInputA4.Value - 2, 0, 100);
+            hInputF4.Value = CycleClaim(hInputF4.Value - 3, 0, 100);
+            hInputP4.Value = CycleClaim(hInputF4.Value - 4, 0, 360);
 
-            hInputA5.Value = CycleClaim(hInputA1.Value + 1, 0, 100);
-            hInputF5.Value = CycleClaim(hInputF1.Value + 3, 0, 100);
-            hInputP5.Value = CycleClaim(hInputF1.Value - 5, 0, 360);
+            hInputA5.Value = CycleClaim(hInputA5.Value + 1, 0, 100);
+            hInputF5.Value = CycleClaim(hInputF5.Value + 3, 0, 100);
+            hInputP5.Value = CycleClaim(hInputF5.Value - 5, 0, 360);
 
             CalcPolyharmonic();
         }
